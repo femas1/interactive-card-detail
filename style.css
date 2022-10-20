@@ -3,3 +3,26 @@
     padding: 0; 
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container-gradient {
+    background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    height: 100%;
+    width: 30vw;
+}
+
+.container-gradient__front {
+    background-image: url(images/bg-card-front.png);
+    height: 245px;
+    width: 447px;
+}
+
+.container-gradient__back {
+    background-image: url(images/bg-card-back.png);
+    height: 245px;
+    width: 447px;
+}
