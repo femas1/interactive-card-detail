@@ -7,6 +7,7 @@
 body {
     display: flex;
     height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .container-gradient {
@@ -19,10 +20,56 @@ body {
     background-image: url(images/bg-card-front.png);
     height: 245px;
     width: 447px;
+
+    transform: translate(260px, 200px);
+
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-gradient__front__card-number {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 90px;
+    margin-bottom: 25px;
+}
+
+.container-gradient__front__cardBottomInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 .container-gradient__back {
     background-image: url(images/bg-card-back.png);
     height: 245px;
     width: 447px;
+
+    transform: translate(350px, 230px);
+
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-gradient__front__cardBottomInfo__card-holder {
+    text-transform: uppercase;
+}
+
+.container-gradient__back__securityNum {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.hidden {
+    display: none;
 }

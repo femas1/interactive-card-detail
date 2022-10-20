@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -35,36 +39,38 @@
     </div>
     
     <div class="container-gradient__back">
-      000
+      <span class="container-gradient__back__securityNum">000</span>
     </div>
     
   </div>
-  <div class="container-white">Yo</div>
+  <div class="container-white">  Cardholder Name
+    e.g. Jane Appleseed
+  
+    Card Number
+    e.g. 1234 5678 9123 0000
+  
+    Exp. Date (MM/YY)
+    MM
+    YY
+  
+    CVC
+    e.g. 123
+  
+    Confirm</div>
 
  
 
-  Cardholder Name
-  e.g. Jane Appleseed
 
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
+  <div class="hidden">
+    Thank you!
+    We've added your card details
+    Continue
+  </div>
   
-  <div class="attribution">
+  <div class="attribution hidden">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Federico Massara</a>.
   </div>
