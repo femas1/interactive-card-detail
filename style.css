@@ -72,6 +72,24 @@ body {
 
 /* RIGHT SIDE STYLING */
 
+.container-white {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-white__form {
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
 .hidden {
     display: none;
 }
