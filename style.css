@@ -82,12 +82,22 @@ body {
 
 .container-white__form {
     height: 500px;
-    width: 500px;
+    width: 400px;
+    background-color: green;
 
     display: flex;
     flex-direction: column;
-    
     justify-content: space-between;
+    padding: 100px 0; 
+}
+
+.container-white__form > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-white__form__expDate__CVC {
+    flex-direction: row;
 }
 
 .hidden {

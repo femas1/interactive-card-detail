@@ -43,7 +43,7 @@
     </div>
     
   </div>
-  
+
   <div class="container-white">  
     
     <form action="" class="container-white__form">
@@ -58,16 +58,23 @@
         <input type="number" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
       </div>
 
-      <div class="container-white__form__expDate">
-        <label for="expDate">Exp. Date (MM/YY)</label>
-        <input type="number" name="expDate" id="month" placeholder="MM">
-        <input type="number" name="expDate" id="year" placeholder="YY">
+      <div class="container-white__form__expDate__CVC">
+
+        <div class="container-white__form__expDate">
+          <label for="expDate">Exp. Date (MM/YY)</label>
+          <input type="number" name="expDate" id="month" placeholder="MM">
+          <input type="number" name="expDate" id="year" placeholder="YY">
+        </div>
+        
+        <div class="container-white__form__CVC">
+  
+          <label for="CVC">CVC</label>
+          <input type="number" name="CVC" placeholder="e.g. 123">
       </div>
 
-      <div class="container-white__form__CVC">
-        <label for="CVC">CVC</label>
-        <input type="number" name="CVC" placeholder="e.g. 123">
       </div>
+
+     
 
       <button>Confirm</button>
     </form>
