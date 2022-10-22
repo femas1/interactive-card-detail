@@ -83,7 +83,6 @@ body {
 .container-white__form {
     height: 500px;
     width: 400px;
-    background-color: green;
 
     display: flex;
     flex-direction: column;
@@ -103,3 +102,6 @@ body {
 .hidden {
     display: none;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
