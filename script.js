@@ -11,21 +11,35 @@ let numberInput4 = document.querySelector('.numberInput--4');
 
 
 
-// cardHolderInput.addEventListener('keyup', ()=> {
-//     let inputValue = cardHolderInput.value;
-//     cardHolderOutput.innerHTML = inputValue;
-// })
+cardHolderInput.addEventListener('keyup', ()=> {
+    let inputValue = cardHolderInput.value;
+    cardHolderOutput.innerHTML = inputValue;
+})
 
 cardNumberInput.addEventListener('keyup', ()=> {
-    const inputValue = [cardNumberInput.value];
-    let numberArr = parseInt(inputValue);
-    console.log(numberArr.slice(0,4))
+    let cardDigits1 = cardNumberInput.value.slice(0, 4);
+    let cardDigits2 = cardNumberInput.value.slice(4, 8);
+    let cardDigits3 = cardNumberInput.value.slice(8, 12);
+    let cardDigits4 = cardNumberInput.value.slice(12, 16);
 
-    // const input1 = numberArr.slice(0, 4);
-
-
-    // numberInput1.innerHTML = input1;
-
-    
+    numberInput1.innerText = cardDigits1;
+    numberInput2.innerText = cardDigits2;
+    numberInput3.innerText = cardDigits3;
+    numberInput4.innerText = cardDigits4;
+    // console.log(`Your card number is: ${cardDigits1} ${cardDigits2} ${cardDigits3} ${cardDigits4}`)
     
 })
+
+// cardNumberInput.addEventListener('keyup', ()=> {
+//     const inputValue = [cardNumberInput.value];
+//     let numberArr = parseInt(inputValue);
+//     console.log(numberArr.slice(0,4))
+
+//     // const input1 = numberArr.slice(0, 4);
+
+
+//     // numberInput1.innerHTML = input1;
+
+    
+    
+// })
