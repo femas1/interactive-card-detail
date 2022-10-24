@@ -4,6 +4,12 @@ const cardHolderInput = document.querySelector('#cardHolder');
 const cardNumberOutput = document.querySelector('.container-gradient__front__card-number');
 const cardNumberInput = document.querySelector('#cardNumber');
 
+const monthInput = document.querySelector('#month');
+const yearInput = document.querySelector('#year');
+
+const monthOutput = document.querySelector('.monthInput');
+const yearOutput = document.querySelector('.yearInput');
+
 let numberInput1 = document.querySelector('.numberInput--1');
 let numberInput2 = document.querySelector('.numberInput--2');
 let numberInput3 = document.querySelector('.numberInput--3');
@@ -26,20 +32,15 @@ cardNumberInput.addEventListener('keyup', ()=> {
     numberInput2.innerText = cardDigits2;
     numberInput3.innerText = cardDigits3;
     numberInput4.innerText = cardDigits4;
-    // console.log(`Your card number is: ${cardDigits1} ${cardDigits2} ${cardDigits3} ${cardDigits4}`)
-    
 })
 
-// cardNumberInput.addEventListener('keyup', ()=> {
-//     const inputValue = [cardNumberInput.value];
-//     let numberArr = parseInt(inputValue);
-//     console.log(numberArr.slice(0,4))
+monthInput.addEventListener('keyup', () =>  {
+    let monthDigits = monthInput.value.slice(0,2);
+    monthOutput.innerText = monthDigits;
+})
 
-//     // const input1 = numberArr.slice(0, 4);
+yearInput.addEventListener('keyup', () =>  {
+    let yearDigits = yearInput.value.slice(0,2);
+    yearOutput.innerText = yearDigits;
+})
 
-
-//     // numberInput1.innerHTML = input1;
-
-    
-    
-// })
