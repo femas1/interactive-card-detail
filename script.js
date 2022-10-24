@@ -10,12 +10,13 @@ const yearInput = document.querySelector('#year');
 const monthOutput = document.querySelector('.monthInput');
 const yearOutput = document.querySelector('.yearInput');
 
-let numberInput1 = document.querySelector('.numberInput--1');
-let numberInput2 = document.querySelector('.numberInput--2');
-let numberInput3 = document.querySelector('.numberInput--3');
-let numberInput4 = document.querySelector('.numberInput--4');
+const numberInput1 = document.querySelector('.numberInput--1');
+const numberInput2 = document.querySelector('.numberInput--2');
+const numberInput3 = document.querySelector('.numberInput--3');
+const numberInput4 = document.querySelector('.numberInput--4');
 
-
+const cvcOutput = document.querySelector('.container-gradient__back__securityNum');
+const cvcInput = document.querySelector('#cvc');
 
 cardHolderInput.addEventListener('keyup', ()=> {
     let inputValue = cardHolderInput.value;
@@ -42,5 +43,9 @@ monthInput.addEventListener('keyup', () =>  {
 yearInput.addEventListener('keyup', () =>  {
     let yearDigits = yearInput.value.slice(0,2);
     yearOutput.innerText = yearDigits;
+})
+
+cvcInput.addEventListener('keyup', ()=> {
+    cvcOutput.innerText = cvcInput.value.slice(0,3)
 })
 
