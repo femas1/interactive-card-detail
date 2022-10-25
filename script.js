@@ -18,6 +18,15 @@ const numberInput4 = document.querySelector('.numberInput--4');
 const cvcOutput = document.querySelector('.container-gradient__back__securityNum');
 const cvcInput = document.querySelector('#cvc');
 
+const cardForm = document.querySelector('.container-white__form');
+const submitBtn = document.querySelector('.btn');
+const completedState = document.querySelector('.completedState');
+
+submitBtn.addEventListener('click', ()=> {
+    cardForm.classList.add('hidden');
+    completedState.classList.remove('hidden');
+})
+
 cardHolderInput.addEventListener('keyup', ()=> {
     let inputValue = cardHolderInput.value;
     cardHolderOutput.innerHTML = inputValue;
