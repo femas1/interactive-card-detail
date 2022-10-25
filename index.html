@@ -52,7 +52,7 @@
 
   <div class="container-white">  
 
-    <form action="" class="container-white__form">
+    <form action="post" class="container-white__form">
 
       <div class="container-white__form__cardholder">
         <label for="cardHolder">Cardholder Name</label>
@@ -61,21 +61,21 @@
 
       <div class="container-white__form__cardNumber">
         <label for="cardNumber">Card Number</label>
-        <input type="number" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16" required>
       </div>
 
       <div class="container-white__form__expDate__CVC">
 
         <div class="container-white__form__expDate">
           <label for="expDate">Exp. Date (MM/YY)</label>
-          <input type="number" name="expDate" id="month" placeholder="MM">
-          <input type="number" name="expDate" id="year" placeholder="YY">
+          <input type="text" name="expDate" id="month" placeholder="MM" required minlength="2" maxlength="2">
+          <input type="text" name="expDate" id="year" placeholder="YY" required minlength="2" maxlength="2">
         </div>
         
         <div class="container-white__form__CVC">
   
           <label for="CVC">CVC</label>
-          <input type="number" name="CVC" placeholder="e.g. 123" id="cvc">
+          <input type="text" name="CVC" placeholder="e.g. 123" id="cvc" required minlength="3" maxlength="3">
       </div>
 
       </div>
