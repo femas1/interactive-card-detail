@@ -21,6 +21,8 @@ const cvcInput = document.querySelector('#cvc');
 cardHolderInput.addEventListener('keyup', ()=> {
     let inputValue = cardHolderInput.value;
     cardHolderOutput.innerHTML = inputValue;
+
+    if (cardHolderInput.value === '') {cardHolderInput.style.border = "1px solid red"}
 })
 
 cardNumberInput.addEventListener('keyup', ()=> {
@@ -33,19 +35,27 @@ cardNumberInput.addEventListener('keyup', ()=> {
     numberInput2.innerText = cardDigits2;
     numberInput3.innerText = cardDigits3;
     numberInput4.innerText = cardDigits4;
+
+    if (cardNumberInput.value === '') {cardNumberInput.style.border = "1px solid red"}
 })
 
 monthInput.addEventListener('keyup', () =>  {
     let monthDigits = monthInput.value.slice(0,2);
     monthOutput.innerText = monthDigits;
+
+    if (monthInput.value === '') {monthInput.style.border = "1px solid red"}
 })
 
 yearInput.addEventListener('keyup', () =>  {
     let yearDigits = yearInput.value.slice(0,2);
     yearOutput.innerText = yearDigits;
+
+    if (yearInput.value === '') {yearInput.style.border = "1px solid red"}
 })
 
 cvcInput.addEventListener('keyup', ()=> {
     cvcOutput.innerText = cvcInput.value.slice(0,3)
+
+    if (cvcInput.value === '') {cvcInput.style.border = "1px solid red"}
 })
 
