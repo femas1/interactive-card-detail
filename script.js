@@ -22,7 +22,8 @@ const cardForm = document.querySelector('.container-white__form');
 const submitBtn = document.querySelector('.btn');
 const completedState = document.querySelector('.completedState');
 
-submitBtn.addEventListener('click', ()=> {
+submitBtn.addEventListener('click', (event)=> {
+    event.preventDefault();
     cardForm.classList.add('hidden');
     completedState.classList.remove('hidden');
 })
@@ -33,7 +34,7 @@ cardHolderInput.addEventListener('keyup', ()=> {
 })
 
 cardHolderInput.addEventListener('focusout', ()=> {
-    if(cardHolderInput.value.length < 8) {cardHolderInput.style.border = ("2px solid red")}
+    if(cardHolderInput.value.length < 8 || cardHolderInput.value.length > 22) {cardHolderInput.style.border = ("2px solid red")}
     else {cardHolderInput.style.border = "2px solid green"};
 })
 
