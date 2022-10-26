@@ -132,6 +132,16 @@ input {
     flex-direction: column;
 }
 
+.btn {
+    border: none; 
+    padding: 20px 0; 
+    border-radius: 10px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    font-size: inherit;
+}
+
 .hidden {
     display: none;
 }
