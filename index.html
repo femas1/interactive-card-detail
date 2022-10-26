@@ -63,7 +63,7 @@
     <form action="" class="container-white__form">
 
       <div class="container-white__form__cardholder">
-        <label for="cardHolder">Cardholder Name</label>
+        <label id="cardHolderName" for="cardHolder">Cardholder Name</label>
         <input type="text" name="cardHolder" id="cardHolder" placeholder="e.g. Jane Appleseed">
       </div>
 
@@ -75,9 +75,12 @@
       <div class="container-white__form__expDate__CVC">
 
         <div class="container-white__form__expDate">
-          <label for="expDate">Exp. Date (MM/YY)</label>
-          <input type="text" name="expDate" id="month" placeholder="MM" required minlength="2" maxlength="2">
-          <input type="text" name="expDate" id="year" placeholder="YY" required minlength="2" maxlength="2">
+          
+            <label for="expDate">Exp. Date (MM/YY)</label>
+          <div id="month__year">
+            <input type="text" name="expDate" id="month" placeholder="MM" required minlength="2" maxlength="2">
+            <input type="text" name="expDate" id="year" placeholder="YY" required minlength="2" maxlength="2">
+          </div>
         </div>
         
         <div class="container-white__form__CVC">
