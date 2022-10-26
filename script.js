@@ -63,8 +63,8 @@ yearInput.addEventListener('keyup', () =>  {
 })
 
 cvcInput.addEventListener('keyup', ()=> {
-    cvcOutput.innerText = cvcInput.value.slice(0,3)
-
-    if (cvcInput.value === '') {cvcInput.style.border = "1px solid red"}
+    cvcOutput.innerText = cvcInput.value.slice(0,3);
 })
-
+cvcInput.addEventListener('focusout', () =>  {
+    if(cvcInput.value.length < 3){cvcInput.style.border = "1px solid red"}
+})
