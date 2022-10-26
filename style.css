@@ -16,6 +16,28 @@ body {
     width: 30vw;
 }
 
+.container-gradient__circles {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+.container-gradient__circles__circle-1 {
+    height: 50px;
+    width: 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.container-gradient__circles__circle-2 {
+    height: 25px;
+    width: 25px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
 .container-gradient__front {
     background-image: url(images/bg-card-front.png);
     height: 245px;
@@ -37,7 +59,7 @@ body {
     text-align: center;
     letter-spacing: 2px;
     font-size: 30px;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 25px;
 }
 
