@@ -30,8 +30,11 @@ submitBtn.addEventListener('click', ()=> {
 cardHolderInput.addEventListener('keyup', ()=> {
     let inputValue = cardHolderInput.value;
     cardHolderOutput.innerHTML = inputValue;
+})
 
-    if (cardHolderInput.value === '') {cardHolderInput.style.border = "1px solid red"}
+cardHolderInput.addEventListener('focusout', ()=> {
+    if(cardHolderInput.value.length < 8) {cardHolderInput.style.border = ("2px solid red")}
+    else {cardHolderInput.style.border = "2px solid green"};
 })
 
 cardNumberInput.addEventListener('keyup', ()=> {
@@ -44,27 +47,35 @@ cardNumberInput.addEventListener('keyup', ()=> {
     numberInput2.innerText = cardDigits2;
     numberInput3.innerText = cardDigits3;
     numberInput4.innerText = cardDigits4;
+})
 
-    if (cardNumberInput.value === '') {cardNumberInput.style.border = "1px solid red"}
+cardNumberInput.addEventListener('focusout', ()=> {
+    if(cardNumberInput.value.length < 16) {cardNumberInput.style.border = ("2px solid red")}
+    else {cardNumberInput.style.border = "2px solid green"};
 })
 
 monthInput.addEventListener('keyup', () =>  {
     let monthDigits = monthInput.value.slice(0,2);
     monthOutput.innerText = monthDigits;
-
-    if (monthInput.value === '') {monthInput.style.border = "1px solid red"}
+})
+monthInput.addEventListener('focusout', () =>  {
+    if(monthInput.value.length < 2){monthInput.style.border = "2px solid red"}
+    else{monthInput.style.border = "2px solid green"}
 })
 
 yearInput.addEventListener('keyup', () =>  {
     let yearDigits = yearInput.value.slice(0,2);
     yearOutput.innerText = yearDigits;
-
-    if (yearInput.value === '') {yearInput.style.border = "1px solid red"}
+})
+yearInput.addEventListener('focusout', () =>  {
+    if(yearInput.value.length < 2){yearInput.style.border = "2px solid red"}
+    else{yearInput.style.border = "2px solid green"}
 })
 
 cvcInput.addEventListener('keyup', ()=> {
     cvcOutput.innerText = cvcInput.value.slice(0,3);
 })
 cvcInput.addEventListener('focusout', () =>  {
-    if(cvcInput.value.length < 3){cvcInput.style.border = "1px solid red"}
+    if(cvcInput.value.length < 3){cvcInput.style.border = "2px solid red"}
+    else{cvcInput.style.border = "2px solid green"}
 })
