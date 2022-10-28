@@ -168,6 +168,46 @@ input::placeholder {
     font-size: inherit;
 }
 
+/*//////////////////////////////////////////////////////////////*/
+/* RESPONSIVE STYLING */
+
+@media (max-width: 1600px) {
+    .container-gradient__back {
+        transform: translate(260px, 230px);
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .container-gradient__front {
+        transform: translate(160px, 200px);
+    }
+
+    .container-gradient__back {
+        transform: translate(160px, 230px);
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .container-gradient__front {
+        transform: translate(60px, 200px);
+    }
+
+    .container-gradient__back {
+        transform: translate(60px, 230px);
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .container-gradient__front, .container-gradient__back {
+
+        width: 447px;
+    }
+
+}
+
 .hidden {
     display: none;
 }
