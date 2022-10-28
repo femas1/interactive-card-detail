@@ -212,6 +212,9 @@ input::placeholder {
         background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
         height: 30vh;
         width: 100%;
+
+        display: flex;
+
     }
     .container-white {
         width: 100%;
@@ -219,6 +222,14 @@ input::placeholder {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .container-gradient__front {
+        transform: translate(0);
+    }
+
+    .container-gradient__back {
+        transform: translate(0) !important;
     }
 
     .container-gradient__front, .container-gradient__back{
