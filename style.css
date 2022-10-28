@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -80,7 +80,7 @@ body {
     color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
-    
+
 }
 
 .container-gradient__front__cardBottomInfo__card-holder {
@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 100px 0; 
+    padding: 100px 0;
 }
 
 .container-white__form > * {
@@ -159,8 +159,8 @@ input::placeholder {
 }
 
 .btn {
-    border: none; 
-    padding: 20px 0; 
+    border: none;
+    padding: 20px 0;
     border-radius: 10px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
@@ -210,11 +210,12 @@ input::placeholder {
 
     .container-gradient {
         background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
-        height: 30vh;
+        /* height: 30vh; */
         width: 100%;
 
         display: flex;
-
+        flex-direction: column;
+        align-items: center;
     }
     .container-white {
         width: 100%;
@@ -225,11 +226,13 @@ input::placeholder {
     }
 
     .container-gradient__front {
-        transform: translate(0);
+        z-index: 2;
+        transform: translate(-25px, 245px);
     }
 
     .container-gradient__back {
-        transform: translate(0) !important;
+        transform: translate(50px, -60px);
+        z-index: 1;
     }
 
     .container-gradient__front, .container-gradient__back{
@@ -243,10 +246,6 @@ input::placeholder {
         font-size: 20px;
     }
 
-    .container-gradient__back {
-        transform: translate(60px, 230px);
-    }
-
     .container-gradient__circles {
        margin-top: 25px;
     }
@@ -255,7 +254,7 @@ input::placeholder {
         height: 40px;
         width: 40px;
     }
-    
+
     .container-gradient__circles__circle-2 {
         height: 20px;
         width: 20px;
@@ -273,16 +272,20 @@ input::placeholder {
     .container-gradient__front__cardBottomInfo__card-expiration span{
         font-size: 13px;
     }
+
+    .btn {
+        margin-top: 20px;
+    }
 }
 
 .hidden {
     display: none;
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
+.attribution {
+    font-size: 11px; text-align: center;
 }
 
-.attribution a { 
-    color: red; 
+.attribution a {
+    color: red;
 }
