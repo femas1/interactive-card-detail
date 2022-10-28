@@ -169,7 +169,7 @@ input::placeholder {
 }
 
 /*//////////////////////////////////////////////////////////////*/
-/* RESPONSIVE STYLING */
+/* RESPONSIVE STYLING - LAPTOP */
 
 @media (max-width: 1600px) {
     .container-gradient__back {
@@ -199,13 +199,69 @@ input::placeholder {
     }
 }
 
+/*//////////////////////////////////////////////////////////////*/
+/* RESPONSIVE STYLING - SMALL LAPTOP&TABLET */
+
 @media (max-width: 1150px) {
 
-    .container-gradient__front, .container-gradient__back {
-
-        width: 447px;
+    body {
+        flex-direction: column;
     }
 
+    .container-gradient {
+        background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+        height: 30vh;
+        width: 100%;
+    }
+    .container-white {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-gradient__front {
+        background-size: 100%;
+        width: 357px;
+        height: 195px;
+        font-size: 12px;
+    }
+
+    .container-gradient__front span {
+        font-size: 20px;
+    }
+
+    .container-gradient__back {
+        transform: translate(60px, 230px);
+    }
+
+    .container-gradient__circles {
+       margin-top: 25px;
+    }
+
+    .container-gradient__circles__circle-1 {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .container-gradient__circles__circle-2 {
+        height: 20px;
+        width: 20px;
+    }
+
+    .container-gradient__front__card-number {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .container-gradient__front__cardBottomInfo {
+        align-items: center;
+    }
+
+    .container-gradient__front__cardBottomInfo__card-expiration span{
+        font-size: 13px;
+    }
 }
 
 .hidden {
