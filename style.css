@@ -221,7 +221,7 @@ input::placeholder {
         align-items: center;
     }
 
-    .container-gradient__front {
+    .container-gradient__front, .container-gradient__back{
         background-size: 100%;
         width: 357px;
         height: 195px;
