@@ -166,6 +166,37 @@ input::placeholder {
     color: hsl(0, 0%, 100%);
     font-weight: 900;
     font-size: inherit;
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.completedState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 400px;
+}
+
+.completeIcon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.completedState__heading, .completedState__text {
+    padding: 10px 0;
 }
 
 /*//////////////////////////////////////////////////////////////*/
