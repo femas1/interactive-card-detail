@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card details form solution
 
-- Solution URL: [https://github.com/femas1/interactive-card-detail.git]
+Live Site URL: [(https://silver-alpaca-cf69b5.netlify.app)]
 
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
